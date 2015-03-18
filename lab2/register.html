@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body {
+            background: url("image/lab_bg.jpg") repeat-x;
+        }
+
+        .reg_text {
+            width: 100%;
+            height: 100%;
+        }
+
+        td {
+            border: groove;
+            width: 200px;
+            height: 30px;
+            padding: 10px;
+        }
+
+        .left {
+            text-align: right;
+
+        }
+    </style>
+    <script type="text/javascript">
+
+        function show_avatar_tooltip() {
+            var avatar = document.getElementById("avatar");
+            show_avatar_tooltip
+        }
+        function submit() {
+            window.parent.location.reload()
+        }
+        function reset() {
+            var textboxes = document.getElementsByName("reginfo");
+            for (var i = 0; i < textboxes.length; i++) {
+                textboxes[i].value = ""
+            }
+
+            var major = document.getElementById("major");
+            major.options[0].selected = true;
+            major.options[1].selected = false;
+
+            var lang = document.getElementsByName("lang");
+            lang[0].checked = true;
+            lang[1].checked = false;
+
+            var pre_lang = document.getElementsByName("pre_lang");
+            pre_lang[0].checked = true;
+            pre_lang[1].checked = false;
+
+        }
+    </script>
+</head>
+
+<body>
+
+<table>
+    <tr>
+        <td class="left">
+            用户名：
+        </td>
+        <td>
+            <label>
+                <input type="text"  class="reg_text" name="reginfo">
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td class="left">
+            密码：
+        </td>
+        <td>
+            <label>
+                <input type="password" class="reg_text" name="reginfo">
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td class="left">
+            密码确认：
+        </td>
+        <td>
+            <label>
+                <input type="password" class="reg_text" name="reginfo">
+            </label>
+
+        </td>
+    </tr>
+    <tr>
+        <td class="left">
+            头像：
+        </td>
+        <td><a href="image.html">
+            <img src="image/kakashi.jpg" id="avatar" onmouseover="show_avatar_tooltip()"
+                 title="我的头像"></a>
+
+        </td>
+    </tr>
+    <tr>
+        <td class="left">
+            专业：
+        </td>
+        <td>
+            <label>
+                <select name="major" id="major">
+                    <option value="1"> 软件</option>
+                    <option value="0">计算机</option>
+                </select>
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td class="left">
+            会使用的编程语言：
+        </td>
+        <td>
+            <label>
+                <input type="checkbox" value="0" name="lang" checked="true">Java
+                <input type="checkbox" value="1" name="lang">Jsp
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td class="left">
+            精通的编程语言：
+        </td>
+        <td>
+            <label>
+                <input type="radio" value="1" checked="true" name="pre_lang">Java
+                <input type="radio" value="0" name="pre_lang">Jsp
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td class="left">
+            <input type="button" id="submit" value=" 提交" onclick="submit()">
+        </td>
+        <td>
+            <input type="button" id="reset" value="重置" onclick="reset()">
+        </td>
+    </tr>
+
+</table>
+</body>
+</html>

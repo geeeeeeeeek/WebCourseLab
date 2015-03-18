@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        td {
+            width: 50px;
+            height: 50px;
+        }
+
+        .red {
+            background: red;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        .yellow {
+            background: yellow;
+            vertical-align: top;
+            text-align: right;
+        }
+
+        .green {
+            background: green;
+            vertical-align: bottom;
+            text-align: right;
+        }
+
+        .white {
+            background: white;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .blue {
+            background: blue;
+            vertical-align: bottom;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0"  style="margin: auto">
+    <tr>
+        <td rowspan="2" class="red">
+            红
+        </td>
+        <td colspan="2" class="yellow">
+            黄
+        </td>
+
+    </tr>
+    <tr>
+        <td class="white">
+            白
+        </td>
+
+        <td rowspan="2" class="green">
+            绿
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="blue">
+            蓝
+        </td>
+
+
+    </tr>
+</table>
+</body>
+</html>
