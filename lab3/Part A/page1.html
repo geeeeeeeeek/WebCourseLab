@@ -1,0 +1,63 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="徐天宇 10302010039" />
+<title>Web应用基础 - Lab 4</title>
+<link href="page1.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- 请勿修改下方内容 -->
+
+<body>
+<div id="wrapper">
+	<h1>CSS基础技术</h1>
+	<h3>选择器的使用</h3>
+	<p>在本次lab中，你将会使用到如下选择器：
+		<ul>
+			<li>
+				<p>类型选择器</p>
+				<p class="tip">使用类型选择器将标题设为居中显示，字号20pt，颜色栗色（maroon）。</p>
+			</li>
+			<li>
+				<p><span id='selector'>id选择器</span></p>
+				<p class="tip">使用id选择器将id为"selector"的元素设置为“Courier New”或其他等宽字体，加粗，下划线，字符间距5px。</p>
+			</li>
+			<li>
+				<p>类选择器</p>
+				<p class="tip">使用类选择器将类名为"tip"的元素设置为灰色（gray），字号9pt。</p>
+			</li>
+		</ul>
+	</p>
+	<p>你还会用到一些进阶的选择器，如：
+		<ul>
+			<li>
+				<p><input type="title" value="属性选择器" readonly="readonly" /></p>
+				<p class="tip">使用属性选择器将下方"type"属性为"text"的input元素设置为高度30，行高30px，缩进两字符，宽度为18个字符。</p>
+				<p><input type="text" value="同时第一个框的格式应保持不变。" readonly="readonly" /></p>
+			</li>
+			<li id="descendants">
+				<p><span>后代选择器</span></p>
+				<p class="tip">使用后代选择器将id为"descendants"的元素的所有span元素后代背景色设置为#eee。</p>
+				<span>这句话和“后代选择器”几个字都应添加了背景色。</span>
+			</li>
+			<li id="child">
+				<p><span>子元素选择器<span/></p>
+				<p class="tip">使用子元素选择器将id为"child"的元素的所有span子元素添加点状、1像素宽、灰色（gray）的边框。</p>
+				<span>这句话应该添加了边框，但“子元素选择器”几个字不应有边框。</span>
+			</li>
+			<li>
+				<p id="brother">兄弟元素选择器</p>
+				<p class="tip">使用兄弟元素选择器将id为"brother"的元素的所有p元素兄弟背景色设置为透明度为10%的红色。</p>
+				<div><p>这句话和“兄弟元素选择器”几个字都不应加上背景色。</p></div>
+			</li>
+		</ul>
+	</p>
+	<p>当然，<span id='pseudo' style="color:red;">伪类</span>和伪元素选择器也是需要掌握的。</p>
+	<p class="tip">使用伪类选择器，使上段中红色的“伪类”两字在鼠标移上去时变为蓝色（blue），鼠标变为小手状。</p>
+	<p>不能顺利变成蓝色？想想PPT中关于“特殊性”的知识。</p>
+	<p class="tip">使用伪元素选择器在下方插入你的学号。（请勿直接更改HTML文件）</p>
+	<p id="stu-id">学号：<p>
+</div>
+</body>
+</html>

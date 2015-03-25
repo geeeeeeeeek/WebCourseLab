@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+/* Please write appropriate CSS at here, some code has been written for you. */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+body{
+	border: 0;
+	font-size: 12.7px;
+	background: transparent;
+	font-family: 微软雅黑,宋体;
+}
+
+.content-wrapper{
+	width: 960px;
+	margin: 0 auto;
+	line-height: 22px;
+	padding-bottom: 30px;
+}
+a {
+	text-decoration: none;
+}
+h1{
+    border-bottom: 1px dashed #888888;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+h2{
+	font-size: 17px;
+	line-height: 22px;
+	margin-top: 20px;
+}
+code {
+	font-family: "Courier New", Courier, monospace;
+	font-style: normal;
+	background-color: #CCC;
+	margin: 0 5px;
+}
