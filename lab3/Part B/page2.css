@@ -3,39 +3,116 @@
 /* Please write appropriate CSS at here, some code has been written for you. */
 
 * {
-	padding: 0;
-	margin: 0;
-}
-body{
-	border: 0;
-	font-size: 12.7px;
-	background: transparent;
-	font-family: 微软雅黑,宋体;
+    padding: 0;
+    margin: 0;
 }
 
-.content-wrapper{
-	width: 960px;
-	margin: 0 auto;
-	line-height: 22px;
-	padding-bottom: 30px;
+body {
+    border: 0;
+    font-size: 12.7px;
+    background: transparent;
+    font-family: 微软雅黑, 宋体;
 }
+
+.content-wrapper {
+    width: 960px;
+    margin: 0 auto;
+    line-height: 22px;
+    padding-bottom: 30px;
+}
+
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
-h1{
+
+h1 {
     border-bottom: 1px dashed #888888;
     font-size: 20px;
     padding: 20px 0;
 }
 
-h2{
-	font-size: 17px;
-	line-height: 22px;
-	margin-top: 20px;
+h2 {
+    font-size: 17px;
+    line-height: 22px;
+    margin-top: 20px;
 }
+
 code {
-	font-family: "Courier New", Courier, monospace;
-	font-style: normal;
-	background-color: #CCC;
-	margin: 0 5px;
+    font-family: "Courier New", Courier, monospace;
+    font-style: normal;
+    background-color: #CCC;
+    margin: 0 5px;
+}
+
+span {
+    color: red;
+    font-weight: bold;
+}
+
+#notice {
+    color: red;
+}
+
+em {
+    border-bottom: 1px dashed red;
+    color: red;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*ul::before {
+    content: "使用CSS有如下作用和好处：";
+    font-weight: bold;
+}*/
+
+ul li {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+ul li + li {
+    font-style: italic;
+}
+
+ul li strong {
+    color: red;
+}
+
+.paragraph {
+    width: 80%;
+    margin: auto;
+    background: #888888;
+    border: #444444 1px;
+    padding: 10px;
+    text-indent: 2em;
+}
+
+#img_example {
+    border: 2px solid #999999;
+    margin: 10px;
+    padding: 2px;
+}
+
+#table_example {
+    font-size: 14px;
+    color: black;
+    line-height: 30px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+a {
+    color: red;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
 }
