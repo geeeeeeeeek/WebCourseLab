@@ -1,0 +1,171 @@
+@charset "utf-8";
+body {
+    margin: 0;
+    font-family: Helvetica, arial, "Times New Roman";
+}
+
+.nav {
+    height: 50px;
+    background: #00a59d;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.nav-inner {
+    width: 960px;
+    height: 50px;
+    margin: auto;
+}
+
+/* style for logo
+--------------------------------*/
+.logo {
+    color: #efefef;
+    float: left;
+    text-decoration: none !important;
+    line-height: 50px;
+}
+
+.logo:hover {
+    color: #ffffff;
+}
+
+/* style for menus
+--------------------------------*/
+.menubar {
+    height: 50px;
+    margin-top: 0;
+    float: right;
+}
+
+.menu {
+    width: 80px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    list-style-type: none;
+}
+
+.menu > a {
+    color: #ffffff;
+    text-decoration: none !important;
+    line-height: 50px;
+}
+
+.menu:hover {
+    background: #0074b7;
+}
+
+/* style for submenus
+---------------------------------*/
+.submenubar {
+    visibility: hidden;
+    width: 170px;
+    list-style-type: none;
+    padding: 5px;
+    text-align: left;
+    background: #ffffff;
+    margin-left: -100px;
+
+    position: relative;
+
+}
+
+.menu:hover .submenubar {
+    visibility: visible;
+    border: 1px solid #00a59d;
+    border-radius: 2px;
+}
+
+.submenubar > li {
+    padding: 4px;
+}
+
+.submenubar > li:hover {
+    background: #00a59d;
+
+}
+
+.submenubar > li > a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: #00a59d;
+}
+
+.submenubar > li:hover > a {
+    color: #ffffff;
+}
+
+/* style for triangles in submenubar
+You can take this as a reference to make this triangle:
+http://stackoverflow.com/questions/9450733/css-triangle-custom-border-color
+----------------------------------------*/
+.submenubar::before,
+.submenubar::after {
+
+}
+
+.submenubar::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 73.5%;
+    top: -12%;
+    width: 0;
+    height: 0;
+    border: 9px solid transparent;
+    border-bottom-color: #00a59d;
+}
+
+.submenubar::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 74%;
+    top: -10%;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #ffffff;
+
+}
+
+/********************* Part B ends and Part C starts here *********************/
+
+/* style for content
+Note: You may get the problem on clearfix,
+so you can take this as a reference:
+http://learnlayout.com/clearfix.html
+------------------------------------------*/
+.content {
+    width: 960px;
+    margin: 60px auto;
+    background: #76D1CE;
+    /* your style goes here or you define a new rule. */
+    /* DO NOT set height explicitly. */
+    overflow: auto;
+}
+
+/*------------------------------------------------------------------------*/
+/* The following rules are freezed, so you mustn't modify them. */
+
+/* Perhaps you'd better use Chrome or Firefox if your
+browser does not support box-sizing. */
+.content > .left,
+.content > .right {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.content > .left {
+    float: left;
+    width: 260px;
+    padding: 20px;
+}
+
+.content > .right {
+    float: right;
+    width: 700px;
+    padding: 20px;
+}
