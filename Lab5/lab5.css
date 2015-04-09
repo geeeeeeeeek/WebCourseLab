@@ -104,7 +104,9 @@
 }
 
 #left-col {
-    margin-left: 300px;
+    position: absolute;
+    left: 300px;
+    /*margin-left: 300px;*/
     display: inline-block;
     border-right: dotted 3px;
     vertical-align: top;
@@ -112,7 +114,9 @@
 }
 
 #right-col {
-    margin-right: 300px;
+    position: absolute;
+    right: 300px;
+    /*margin-right: 300px;*/
     display: inline-block;
     border-left: dotted 3px;
     vertical-align: top;
@@ -120,18 +124,20 @@
 }
 
 #middle-col {
+    position: relative;
     width: 510px;
-    height: 493px;
+    /*height: 493px;*/
     display: inline-block;
     vertical-align: middle;
     overflow: hidden;
-    margin: 0 0;
-    padding: 20px;
+    margin: auto;
+    padding: 0 60px 0 60px;
 }
 
 #middle-col p {
     text-align: left;
     overflow: auto;
+    padding: 0 20px 0 20px;
 }
 
 #wrapper {
