@@ -1,0 +1,180 @@
+body {
+    background-color: #73cff1;
+}
+
+#note {
+    background-color: #fff;
+    margin: 0 auto;
+    width: 900px;
+    box-shadow: 3px 3px 30px #999999;
+}
+
+#display {
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+    color: #7359f3;
+}
+
+#write {
+    position: fixed;
+    bottom: 0px;
+    width: 900px;
+    background: #ffbb00;
+    box-shadow: 3px 3px 30px #999999;
+}
+
+#noteDiv {
+    overflow: auto;
+    font-family: "微软雅黑", "黑体", "Arial Unicode MS";
+    font-size: 20px;
+    color: #666;
+    height: 50px;
+    overflow-y: hidden;
+}
+
+#noteDiv span {
+    float: left;
+    margin-top: 20px;
+}
+
+#noteDiv p {
+    float: right;
+}
+
+textarea {
+    width: 880px;
+    height: 100px;
+    margin-left: 10px;
+}
+
+#promote {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 28px;
+    color: #666;
+
+}
+
+#tool {
+    overflow: auto;
+}
+
+#tool ul {
+    list-style-type: none;
+}
+
+#tool ul a {
+    color: #000;
+    text-decoration: none;
+    float: left;
+    width: 50px;
+    margin-right: 20px;
+}
+
+#tool .image {
+    background-image: url("img/main.png");
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 15px;
+    float: left;
+}
+
+#tool .name {
+    float: right;
+    font-family: "微软雅黑", "黑体", "Arial Unicode MS";
+    font-size: 15px;
+}
+
+#face .image {
+    background-position: -677px -319px;
+}
+
+#photo .image {
+    background-position: -693px -319px;
+}
+
+#video .image {
+    background-position: -708px -319px;
+}
+
+#submit {
+    float: right;
+    margin-right: 30px;
+    background-color: #9d0;
+    width: 120px;
+    height: 35px;
+    margin-top: -10px;
+}
+
+.entry {
+    /*width: 100%;*/
+    height: 60px;
+    border-bottom: solid 1px #CCCCCC;
+    margin: 15px;
+
+}
+
+.avatar {
+    background: url("img/user.jpg") no-repeat;
+    width: 7%;
+    height: 100%;
+    /*margin: 10px;*/
+    display: inline-block;
+}
+
+.right {
+    display: inline-block;
+    vertical-align: top;
+    width: 93%;
+}
+
+.text {
+    height: 35px;
+}
+
+.name {
+    color: blue;
+}
+
+.message {
+    /*width: 100%;*/
+}
+
+.side {
+    width: 100%;
+    font-size: smaller;
+    color: #39aee8;
+}
+
+.time {
+    float: left;
+}
+
+.forward {
+    float: right;
+}
+
+#faceDiv {
+    background: lightgray;
+    width: 390px;
+    height: 100px;
+    bottom: 45px;
+    left: 10px;
+    position: absolute;
+    padding: 5px;
+    display: none;
+}
+
+.face-item {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    vertical-align: middle;
+}
