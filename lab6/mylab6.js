@@ -19,6 +19,7 @@ submit.addEventListener("click", function () {
         "<div class ='side'><span class ='time'>" + time + "</span><span class ='forward'>转发</span></div></div>" +
         "</div>";
 
+    text.value = "";
     display.innerHTML += temple;
 });
 
