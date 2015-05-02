@@ -1,0 +1,50 @@
+@charset "utf-8";
+body {
+    margin: 0;
+}
+.container {
+    width: 960px;
+    margin: 50px auto;
+}
+h1 {
+    text-align: center;
+}
+.tip {
+    margin: 50px 0;
+    font-size: 2rem;
+    color: red;
+    text-align: center;
+}
+/* style for tabpanel
+------------------------------*/
+
+.tabpanel {
+    border: 1px solid #ccc;
+}
+.tabs {
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+    list-style: none;
+    overflow: hidden;
+}
+.tab {
+    float: left;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.tab.active {
+    background: #fff;
+}
+.tabcontent {
+    margin: 20px;
+}
+.tabpane {
+    display: none
+}
+.tabpane.active {
+    display: block;
+}
